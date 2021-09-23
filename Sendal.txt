@@ -1,0 +1,25 @@
+class Sendal{
+    String name = "";
+    double weight = 0.1;
+
+    Sendal (this.name, this.weight);
+
+    String melepasSandal() {
+      return "melepas Sendal $name";
+    }
+
+    String memakaiSandal() {
+      return 'memakai Sendal $name';
+    }
+}
+main(List<String> args){
+  Sendal sendalJepit= new Sendal ("Swallow", 0.2);
+  Sendal sendalMiniso = new Sendal ("Miniso", 0.5);
+
+  print("Puput " + sendalJepit.memakaiSandal());
+  print("Puput " + sendalJepit.melepasSandal());
+  print('===========================================');
+
+  print("Puput " + sendalMiniso.memakaiSandal());
+  print("Puput " + sendalMiniso.melepasSandal());
+}
